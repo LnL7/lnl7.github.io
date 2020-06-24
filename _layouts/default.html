@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <title>{{ page.title }} - {{ site.title }}</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Nix, unix &amp; macOS"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+        <meta name="twitter:site" content="@LnL7" />
+        <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+        <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    </style>
+    </head>
+    <body>
+        <div class="top"><div class="banner"></div></div>
+        <header>
+            <h1>Daiderd Jordan</h1>
+            <p class="description">Nix, unix &amp; macOS</p>
+            <nav>
+                <a href="/">Posts</a>
+                <a href="https://github.com/LnL7">GitHub</a>
+                <span class="right">LnL7</span>
+            </nav>
+        </header>
+        <main>
+            {{ content }}
+
+            <ol>
+                {% for post in site.posts %}
+                    <li><strong><a href="{{ post.url }}">{{ post.title }}</a></strong><span class="description"> » {{ post.date | date_to_string }}</span></li>
+                {% endfor %}
+            </ol>
+        </main>
+        <footer>
+            <p class="description">1970 /nix/store</p>
+        </footer>
+    </body>
+</html>
