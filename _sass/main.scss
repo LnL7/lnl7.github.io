@@ -9,7 +9,8 @@ body {
 
     margin: 0 auto;
     padding: 16px;
-    max-width: 620px;
+    max-width: 720px;
+    line-height: 1.6em;
 }
 
 header {
@@ -41,22 +42,38 @@ nav a {
 
 h1 {
     color: hsl(190, 20%, 30%);
+    font-size: 2em;
     font-weight: normal;
-    text-transform: uppercase;
     margin: 1em 0 0.2em 0;
 }
 
 header h1 {
-    font-size: 2em;
+    text-transform: uppercase;
 }
 
 a {
-    color: hsl(190, 20%, 30%);
+    color: hsl(190, 20%, 40%);
     text-decoration: none;
 }
 
 a:hover {
     color: hsl(190, 20%, 80%);
+}
+
+blockquote {
+    color: hsl(190, 20%, 40%);
+    border-left: 4px solid hsl(190, 20%, 80%);
+    margin: 0 0 0 1em;
+    padding: 0 0 0 1em;
+}
+
+code {
+    word-break: keep-all;
+}
+
+pre {
+    padding: 1em;
+    overflow: scroll;
 }
 
 img {
@@ -65,8 +82,7 @@ img {
 
 .description {
     color: hsl(190, 5%, 70%);
-    margin: 0 auto;
-    width: 80%;
+    margin: 0;
 }
 
 .top {

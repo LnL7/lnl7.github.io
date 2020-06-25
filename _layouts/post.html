@@ -24,6 +24,10 @@
         <main>
             <article>
                 <h1>{{ page.title }}</h1>
+                <p class="description">
+                    <span>» {{ page.date | date_to_string }}</span>
+                    <span class="right">[{% for tag in page.tags %} {{ tag }} {% endfor %}]</span>
+                </p>
 
                 {{ content }}
             </article>
